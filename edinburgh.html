@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Edinburg</title>
+
+	<link href="style/main.css" rel="stylesheet" type="text/css" />
+	<link href="scripts/script.js" rel="script" type="script">
+	<link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+	<link rel="icon" href="https://geobranche.nl/gmd1920/CheskoWoldendorp/images/LOGOstraightWhite.png">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	crossorigin=""/>
+
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	crossorigin=""></script>
+
+	<style> #mapid { height: 400px; } </style>
+</head>
+
+<body onload='initMap()'>
+
+	<div class="topnav">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="participate.html">Participate</a></li>
+					<li><a href="faq.html">Questions</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="steden.html">Cities</a></li> <!-- to be dropdown -->
+					<li><a href="hamburg.html">Hamburg</a></li>
+					<li><a href="edinburgh.html">Edinburgh</a></li>
+					<input type="text" placeholder="Search..">
+				</ul>
+			</nav>
+		</header>
+	</div>
+
+<div>
+	<div class="titlebox-edinburgh">
+		<div class="title">
+			<h1>Edinburgh</h1>
+		</div>
+	</div>
+</div>
+
+<div class="general-information-ED">
+	<div class="facts">
+		<p>
+			<h6>Facts about Edinburgh:</h6><br>
+			<h4>Edinburgh was the first city to have it's own fire service!<br><br>
+			JK. Rowling has taken quite some inspiration for her world famous Harry Potter series from Edinburgh and her surroundings. <br><br>
+			Edinburgh Castle’s Great Hall has a small window high above the fireplace known as “laird’s lug” which translates into “the Lord’s ear.” The window allowed castle residents to eavesdrop on conversations taking place in the Great Hall.<br><br>
+			Edinburgh has more listed buildings than anywhere in the world.<br><br>
+			The National Monument on Calton Hill is known as “Edinburgh’s Folly” or “Edinburgh’s Shame.” It was modeled after the Parthenon in Athens, but funding for the build ran out and it was never completed.<br><br>
+			
+			</h4><br>
+		</p>
+	</div>
+	<div class="quote">
+		<p>
+			<h6>Quote:<br>
+				“Enchanting… [Edinburgh] shall make a delightful summer capital when we invade Britain.”<br>
+				~J. Goebbels, minister of propaganda during Hitlers regime.</h6><br>
+		</p>
+	</div>
+	<div class="imageED"><img src="images/gifhp.gif" alt="HarryPotter"/></div>
+</div>
+
+<div>
+	<div id="mapid"></div>
+        <script>
+            var mymap = L.map('mapid').setView([55.951073, -3.188161], 10);
+                            L.tileLayer('https://api.mapbox.com/styles/v1/cheskowoldendorp/cki619e501yhu19o2kmh10xau/tiles/512/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2hlc2tvd29sZGVuZG9ycCIsImEiOiJjazQ5eWx1N24wN2hiM2RwYWc2YjJteWJhIn0.OrVnNChaIEipiBeuNVFoFw', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>; contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>; Imagery ©️ <a href="https://www.mapbox.com/">Mapbox</a>;',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'pk.eyJ1IjoiY2hlc2tvd29sZGVuZG9ycCIsImEiOiJjazQ5eWx1N24wN2hiM2RwYWc2YjJteWJhIn0.OrVnNChaIEipiBeuNVFoFw'
+        }).addTo(mymap);
+
+        </script>
+</div>
+
+<div class="break"></div>
+
+<div class="socialmedia">
+	<slider>
+		<slide><p>@Jasontravels</p></slide>
+		<slide><p>@Max_in_the_sky</p></slide>
+		<slide><p>@Kira</p></slide>
+		<slide><p>@lindsey_on_the_road</p></slide>
+	</slider>
+</div>
+
+<div class="break"></div>
+
+<h2>Information</h2>
+<br> 
+<div class="process-wrapper">
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01 active"><div class="step-inner">EDINBURGH</div></li>
+		<li class="step step02"><div class="step-inner">URBAN HISTORY</div></li>
+		<li class="step step03"><div class="step-inner">GEOGRAPHY</div></li>
+		<li class="step step04"><div class="step-inner">CLIMATE</div></li>
+		<li class="step step05"><div class="step-inner">POPULATION</div></li>
+	</ul>
+	
+	<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+		<h3>Edinburgh</h3><br><br>
+		<p>Edinburgh is niet alleen de hoofdstad, maar ook voor de wereld een toonaangevende festivalstad, de thuisbasis van fenomenale zomerfestivals en een UNESCO Werelderfgoedlocatie.</p>
+	</div>
+	
+	<div class="section-content strategy">
+		<h3>Urban history of Edinburgh</h3><br><br>
+		<p>Edinburg is een stad met een bijzondere urbane geschiedenis in het centrum. <br>
+			Het oudste gedeelte van de stad, genaamd “Old town” wordt gekenmerkt door het wegenpatroon als een vissengraat. Waarbij de straat “High street” de grootste en breedste straat is in de stad en waar allemaal kleine smalle straatjes op uitkomen. De gebouwen aan deze straten zijn, helemaal voor de tijd waarin zij gebouwd zijn, zeer hoog, tot wel 6 verdiepingen.<br>
+			Na “Old town” is er een nieuw gedeelte in de stad gebouwd, deze werd “New town” genoemd. Deze staat bekend om zijn uitgedachte en geplande lay-out. New town is gebouwd tussen 1767 en 1890. De stijl wordt gekenmerkt door de hardstenen neoklassieke gebouwen, geassocieerd met bekende architecten uit die tijd. Het succes van de uitbreiding van Edinburgh met New town zette een beweging in Europa in gang in de manier van stedelijke architectuur en uitbreidingen.</p>
+	</div>
+	
+	<div class="section-content creative">
+		<h3>Geography of Edinburgh and the Firth of Fourth</h3><br><br>
+		<p>Edinburgh is gebouwd op een landschap van dode vulkanen. Het hoogste punt is de heuvel genaamd Arthurs seat, die met 251 hoog boven het landschap uitsteekt. Daarnaast is Edinburgh Castle, het hart van de stad, gebouwd op een dode vulkaan, deze komt 76 meter boven het dal uit. De dalen tussen de heuvels zijn in het pleistoceen uitgediept door gletsjers. Dat Edinburgh is gebouwd in dit bijzondere landschap zorgt voor een spectaculaire afwisseling in bebouwde en natuurlijke omgeving.  <br><br>
+
+			Het Estuarium Firth of Forth waaraan Edinburgh is gelegen is net als de dalen op het land gevormd door gletsjers. Het Estuarium wordt gevoed door de rivier The Forth en is 77 kilometer lang. De rivier zelf is 71 kilometer lang en heeft een stroomgebied van 444 vierkante kilometer.</p>
+	</div>
+	
+	<div class="section-content production">
+		<h3>Climate</h3><br><br>
+		<p>Edinburgh heeft een mild klimaat, de ligging aan de zee mitigeert extreme temperaturen. De winters zijn relatief warm met gemiddelde temperaturen blijvend boven het vriespunt. De zomers zijn daarentegen relatief koel, met zelden temperaturen boven de 21 graden Celsius. Jaarlijkse neerslag is ook gematigd, met gemiddeld 685 mm. Deze neerlag is gelijk verdeeld over het gehele jaar. Wel heeft Edinburg relatief weinig zonneschijn, minder dan een derde van de mogelijke zonuren voor de breedtegraad.</p>
+	</div>
+	
+	<div class="section-content analysis">
+		<h3>Population of Edinburgh</h3><br><br>
+		<p>
+			<iframe title="Population Edinburgh" aria-label="Interactive line chart" id="datawrapper-chart-umh9H" src="https://datawrapper.dwcdn.net/umh9H/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="600"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+			</script>
+		</p>
+	</div>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+    $(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+ 
+    </script>
+
+<div class="break"></div>
+
+<div class="footer">
+	<div class="fleft">
+		<p> Kawaihae Beach 1, <br> Hawai'i <br><br> Phone: (1)808 11111111 <br> (open 24/7) <br><br>
+			E-mail: info.cityheritage@unesco.com</p>
+	</div>
+	<div class="fmiddle">
+		<p>
+			<a href="index.html">Home</a><br>
+			<a href="about.html">About</a><br>
+			<a href="participate.html">Participate</a><br>
+			<a href="faq.html">Questions</a><br>
+		</p>
+	</div>
+	<div class="fright">
+		<p>
+			<a href="contact.html">Contact</a><br>
+			<a href="steden.html">Cities</a><br>
+			<a href="hamburg.html">Hamburg</a><br>
+			<a href="edinburgh.html">Edinburgh</a><br>
+		</p>
+	</div>
+</div>
+
+
+</body>
+
+</html>

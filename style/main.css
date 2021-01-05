@@ -1,0 +1,1071 @@
+*{
+	padding: 0;
+	margin: 0;
+	scrollbar-width: thin;
+  	scrollbar-color: #323232 rgba(191, 191, 191, 1);
+}
+
+*::-webkit-scrollbar {
+	width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+	background: rgba(191, 191, 191, 1);
+  }
+  *::-webkit-scrollbar-thumb {
+	background-color: #323232;
+	border-radius: 20px;
+	border: 3px solid rgba(191, 191, 191, 1);
+  }
+
+h1 {
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0px 2px rgba(46, 49, 49, 0.5);
+}
+
+h2 {
+	color: rgba(32, 32, 32, 0.8);
+	font-size: 40px;
+	text-align: center;
+	padding:5px;
+}
+
+h4 {
+	color: rgba(32, 32, 32, 0.8);
+	font-size: 15px;
+	text-align: center;
+	font-family: 'Cantata One', serif;
+}
+
+h6 {
+	color: #323232;
+	font-size: 20px;
+	font-family: 'Cantata One', serif;
+}
+
+a {
+	color: #323232;
+}
+
+img {
+	size: cover;
+}
+
+p {
+	font-family: 'cormorant', serif;
+}
+
+nav {
+	background-color: #323232;
+	width: 100%;
+	height: 46px;
+}
+
+ul .topnav{
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+	overflow: hidden;
+	height: 36px;
+	
+}
+
+li {
+	  float: left;
+	  list-style-type: none; 
+}
+
+li a {
+  	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+
+li a:hover {
+  	background-color: #111;
+}
+
+body {
+ 	background-color: #F4E9DE;
+ 	width: 100%;
+ 	height: auto;
+ 	overflow: scroll;
+ 	padding:0px;
+ 	font-family: Arial, Helvetica, sans-serif;
+ 	color: #86888C;
+	 font-size: 16px;
+	 overflow-x: hidden;
+}
+
+.break {
+	height: 40px;
+	width: 100%;
+}
+
+.photobutton {
+	background-color:rgba(46, 49, 49, 0.5);
+	border-radius:28px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Cantata One', serif;;
+	font-size:17px;
+	padding:16px 31px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 30%;
+	text-decoration:none;
+	align-self: center;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+
+}
+.photoutton:hover {
+	background-color:transparent;
+}
+.photoutton:active {
+	position:relative;
+	top:1px;
+}
+
+.topnav input[type=text] {
+  	float: right;
+  	padding: 6px;
+  	border: none;
+  	margin-top: 8px;
+  	margin-right: 16px;
+	font-size: 17px;
+}
+
+.title {
+	width: 80%;
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	font-size: 50px;
+	font-family: 'Cantata One', serif;
+}
+
+.title h1{
+	color: #ffffff;
+	vertical-align: middle;
+}
+
+.titlebox-index {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/EDtwo.png);
+	background-size: cover;
+}
+
+.titlebox-about {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/about3.jpg);
+	background-size: cover;
+}
+
+.titlebox-contact {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/contact3.jpg);
+	background-size: cover;
+}
+
+.titlebox-questions {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/questions3.jpg);
+	background-size: cover;
+}
+
+.titlebox-participate {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/participate3.jpg);
+	background-size: cover;
+}
+
+.titlebox-edinburgh {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/EDthree.jpg);
+	background-size: cover;
+}
+
+.titlebox-hamburg {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/hamburg1.jpg);
+	background-size: cover;
+}
+
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+    "foto3 tekst1 foto2"
+    "foto3 foto1 tekst2";
+}
+.tekst1 { 
+	grid-area: tekst1;
+	background-color: #F4E9DE;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.tekst1 p {
+	vertical-align: middle;
+	color: #323232;
+	padding: 30px;
+}
+
+.tekst2 { 
+	grid-area: tekst2;
+	background-color: #F4E9DE;
+	display: flex;
+  	align-items: center;
+  	justify-content: center; 
+}
+
+.tekst2 p {
+	vertical-align: middle;
+	color: #323232;
+	padding: 30px;
+}
+
+.foto1 { 
+	grid-area: foto1;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/EDone.jpg);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.foto2 { 
+	grid-area: foto2;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/oldtown2.jpg);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;  
+}
+
+.foto3 { 
+	grid-area: foto3; 
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/oldtown6.jpg);
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center;   
+}
+
+.button {
+  background-color: #323232;
+  position: relative;
+  align-self: center;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.socialmedia {
+	height: 400px;
+	width: 100%;
+	background-color: #323232;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+    "foto4 tekst1 foto6"
+    "tekst2 foto5 foto6";
+}
+
+.foto4 { 
+	grid-area: foto4;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/oldtown1.jpg);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.foto5 { 
+	grid-area: foto5;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/oldtown3.jpg);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;   
+}
+
+.foto6 { 
+	grid-area: foto6; 
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/oldtown5.jpg);
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center;  
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 190px;
+	gap: 0px 2px;
+	grid-template-areas:
+	  "fleft fmiddle fright";
+	background-color: #323232;
+	vertical-align: center;
+	text-align: center;
+}
+
+.footer p{
+	padding :10%;
+}
+
+.footer p a{
+	color:#86888C;
+	text-decoration: none;
+}
+
+
+.about-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 300px 300px;
+	gap: 20px 10px;
+	padding: 10%;
+	grid-template-areas:
+    "about1 about2"
+    "about3 about4";
+  }
+
+.about1 { 
+	grid-area: about1;
+	background-color: #F4E9DE;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.about1 p {
+	vertical-align: middle;
+	color: #323232;
+	padding: 30px;
+	font-size: 18px;
+}
+
+.about2 {
+	grid-area: about2; 
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/about1.jpg);
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center;  
+}
+
+.about3 {
+	grid-area: about3; 
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/about2.jpg);
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center;  
+}
+
+.about4 { 
+	grid-area: about4;
+	background-color: #F4E9DE;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.about4 p {
+	vertical-align: middle;
+	color: #323232;
+	padding: 30px;
+	font-size: 18px;
+}
+
+.contact-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 300px 300px;
+	gap: 20px 10px;
+	padding: 10%;
+	grid-template-areas:
+    "contact1 contact2"
+    "contact3 contact4";
+  }
+
+.contact1 { 
+	grid-area: contact1;
+	background-color: #F4E9DE;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.contact1 p {
+	vertical-align: middle;
+	color: #323232;
+	padding: 30px;
+}
+
+.contact2 {
+	grid-area: contact2; 
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/contact1.jpg);
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center;  
+}
+
+.contact3 {
+	grid-area: contact3; 
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/contact2.jpg);
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center;  
+}
+
+.contact4 { 
+	grid-area: contact4;
+	background-color: #F4E9DE;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.contact4 p {
+	vertical-align: middle;
+	color: #323232;
+	padding: 30px;
+}
+
+.questions-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 300px 300px;
+	gap: 20px 10px;
+	padding: 10%;
+	grid-template-areas:
+    "questions1 questions2"
+    "questions3 questions4";
+  }
+
+.questions1 { 
+	grid-area: questions1;
+	background-color: #F4E9DE;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.questions1 p {
+	vertical-align: middle;
+	color: #323232;
+	padding: 30px;
+}
+
+.questions2 {
+	grid-area: questions2; 
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/questions1.jpg);
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center;  
+}
+
+.questions3 {
+	grid-area: questions3; 
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/questions2.jpg);
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center;  
+}
+
+.questions4 { 
+	grid-area: questions4;
+	background-color: #F4E9DE;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.questions4 p {
+	vertical-align: middle;
+	color: #323232;
+	padding: 30px;
+}
+
+.participate-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 300px 300px;
+	gap: 20px 10px;
+	padding: 10%;
+	grid-template-areas:
+    "participate1 participate2"
+    "participate3 participate4";
+  }
+
+.participate1 { 
+	grid-area: participate1;
+	background-color: #F4E9DE;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.participate1 p {
+	vertical-align: middle;
+	color: #323232;
+	padding: 30px;
+}
+
+.participate2 {
+	grid-area: participate2; 
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/participate1.jpg);
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center;  
+}
+
+.participate3 {
+	grid-area: participate3; 
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/participate2.jpg);
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center;  
+}
+
+.participate4 { 
+	grid-area: participate4;
+	background-color: #F4E9DE;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.participate4 p {
+	vertical-align: middle;
+	color: #323232;
+	padding: 30px;
+}
+
+.general-information-ED {
+	width: 100%;
+	height: 600px;
+}
+
+.general-information-HB {
+	width: 100%;
+	height: 600px;
+}
+
+slider {
+	display: block;
+	width: 100%;
+	height: 500px;
+	background-color: #86888C;
+	overflow: hidden;
+	position: absolute;
+}
+
+slider > * {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 500px;
+	background: #86888C;
+	animation: slide 12s infinite;
+	overflow: hidden;
+}
+
+slide:nth-child(1) {
+	left: 0%;
+	animation-delay: -1s;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/travel1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+slide:nth-child(2) {
+	animation-delay: 2s;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/travel2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+slide:nth-child(3) {
+	animation-delay: 5s;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/travel3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+slide:nth-child(4) {
+	left: 0%;
+	animation-delay: 8s;
+	background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/travel4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+slide p {
+	font-family: 'Cantata One', serif;
+	font-size: 50px;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	margin-top: 200px;
+	color: #ffffff;
+}
+
+@keyframes slide {
+	0% {left: 100%; width: 100%;}
+	5% {left: 0%;}
+	25% {left: 0%;}
+	30% {left: -100%; width: 100%;}
+	30.0001% {left: -100%; width: 100%;}
+	100% {left: 100%; width: 0%;}
+}
+
+.process-wrapper {
+	margin:auto;
+	max-width:1080px;
+}
+
+#progress-bar-container {
+	position:relative;
+	width:90%;
+	margin:auto;
+	height:100px;
+	margin-top:65px;
+}
+
+#progress-bar-container ul {
+	padding:0;
+	margin:0;
+	padding-top:15px;
+	z-index:9999;
+	position:absolute;
+	width:100%;
+	margin-top:-40px;
+	background-color: none;
+}
+
+#progress-bar-container li:before {
+	content:" ";
+	display:block;
+	margin:auto;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:solid 2px #aaa;
+	transition:all ease 0.3s;
+     
+}
+
+#progress-bar-container li.active:before, #progress-bar-container li:hover:before {
+	border:solid 2px #fff;
+       	 
+	background-color: #323232; 
+}
+
+#progress-bar-container li {
+	list-style:none;
+	float:left;
+	width:20%;
+	text-align:center;
+	color:#aaa;
+	text-transform:uppercase;
+	font-size:11px;
+	cursor:pointer;
+	font-weight:700;
+	transition:all ease 0.2s;
+	vertical-align:bottom;
+	height:60px;
+	position:relative;
+}
+
+#progress-bar-container li .step-inner {
+	position:absolute;
+	width:100%;
+	bottom:0;
+    font-size: 14px;
+}
+
+#progress-bar-container li.active, #progress-bar-container li:hover {
+	color:#444;
+}
+
+#progress-bar-container li:after {
+	content:" ";
+	display:block;
+	width:6px;
+	height:6px;
+	background:#777;
+	margin:auto;
+	border:solid 7px #fff;
+	border-radius:50%;
+	margin-top:40px;
+	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
+	transition:all ease 0.2s;
+     
+}
+
+#progress-bar-container li:hover:after {
+	background:#555;
+}
+
+#progress-bar-container li.active:after {
+	background:rgba(32, 32, 32, 0.5);
+}
+
+#progress-bar-container #line {
+	width:80%;
+	margin:auto;
+	background: #eee;
+	height:6px;
+	position:absolute;
+	left:10%;
+	top:57px;
+	z-index:1;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+#progress-bar-container #line-progress {
+	content:" ";
+	width:3%;
+	height:100%;
+	background: rgba(32, 32, 32, 0.5);	
+	position:absolute;
+	z-index:2;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+#progress-content-section {
+	width:90%;
+	margin: auto;
+	background: #f3f3f3;
+	border-radius: 4px;
+}
+
+#progress-content-section .section-content {
+	padding:30px 40px;
+	text-align:center;
+}
+
+#progress-content-section .section-content h3 {
+	font-size:17px;
+	text-transform:uppercase;
+	color:#333;
+	letter-spacing:1px;
+}
+
+#progress-content-section .section-content p {
+	font-size:16px;
+	line-height:1.8em;
+	color:#777;
+}
+
+#progress-content-section .section-content {
+	display:none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(15px);
+	opacity:0;
+}
+
+#progress-content-section .section-content.active {
+	display:block;
+}
+
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
+
+.general-information-ED {
+	display: grid;
+	grid-template-columns: 40% 40%;
+	grid-template-rows: 40% 40%;
+	gap: 30px 30px;
+	padding: 5%;
+	grid-template-areas:
+	  "imageED facts"
+	  "quote facts";
+  }
+
+  .facts { 
+	  grid-area: facts;
+	  text-align: center;
+	  padding-left: 80px;
+	  padding-right: 80px; 
+	}
+
+  .quote { 
+	  grid-area: quote;
+	  text-align: center;
+	  padding: 20%;
+	}
+
+  .imageED { 
+	  grid-area: imageED;
+	  background-color: transparent;
+	  background-position: center;
+	  background-repeat: no-repeat; 
+	}
+
+	.imageED img {
+		text-align: center;
+		margin: 0 auto;
+		float: none;
+		width: 100%;
+
+
+	}
+
+.general-information-HB {
+	display: grid;
+	grid-template-columns: 40% 40%;
+	grid-template-rows: 40% 40%;
+	gap: 30px 30px;
+	padding: 5%;
+	grid-template-areas:
+	  "imageHB facts"
+	  "quote facts";
+	  }
+	  
+	.imageHB { 
+		grid-area: imageHB;
+		background-image: url(https://geobranche.nl/gmd1920/CheskoWoldendorp/images/hamburg1.jpg);
+		background-position: center;
+		background-size: 80%;
+		background-repeat: no-repeat; 
+		}
+
+
+
+@media screen and (max-width: 800px) {
+
+.grid-container-1 {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 300px 300px 300px 300px;
+	grid-template-areas:
+	  "tekst1"
+	  "foto1"
+	  "tekst2"
+	  "foto2";
+  }
+  
+  .tekst1 p {
+	  padding: 30px;
+  }
+  
+  .tekst2 p {
+	  padding: 30px;
+  }
+  
+  .foto1 { 
+	  grid-area: foto1;
+	  background-size: 100%;
+  }
+  
+  .foto2 { 
+	  grid-area: foto2;
+	  background-size: 100%;
+  }
+
+  .grid-container-2 {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 300px 300px 300px 300px;
+	grid-template-areas:
+	  "tekst1"
+	  "foto4"
+	  "tekst2"
+	  "foto5";
+  }
+  
+  .foto4 { 
+	  grid-area: foto4;
+	  background-size: 100%;
+  }
+  
+  .foto5 { 
+	  grid-area: foto5;
+	  background-size: 100%;
+  }
+  
+  .footer {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.title {
+	width: 80%;
+	font-size: 30px;
+}
+
+.about-container {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 300px 300px 300px 300px;
+	gap: 0px 0px;
+	padding: 10%;
+	grid-template-areas:
+	"about1"
+	"about2"
+	"about4"
+	"about3";
+  }
+
+.about1 p {
+	height: 280px;
+	font-size: 16px;
+}
+
+.about2 {
+	grid-area: about2; 
+	background-size: 100%;
+}
+
+.about3 {
+	grid-area: about3; 
+	background-size: 100%;
+}
+
+.about4 p h6 {
+	padding: 10px;
+}
+
+.about4 p {
+	vertical-align: middle;
+	height: 280px;
+	font-size: 16px;
+}
+
+.contact-container {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 300px 300px 300px 300px;
+	gap: 0px 0px;
+	padding: 10%;
+	grid-template-areas:
+	"contact1"
+	"contact2"
+	"contact4"
+	"contact3";
+  }
+
+.contact1 p {
+	height: 280px;
+	font-size: 16px;
+}
+
+.contact2 {
+	grid-area: contact2; 
+	background-size: 100%;
+}
+
+.contact3 {
+	grid-area: contact3; 
+	background-size: 100%;
+}
+
+.contact4 p {
+	height: 280px;
+	font-size: 16px;
+}
+
+.questions-container {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 300px 300px 300px 300px;
+	gap: 0px 0px;
+	padding: 10%;
+	grid-template-areas:
+	"questions1"
+	"questions2"
+	"questions4"
+	"questions3";
+  }
+
+.questions1 p {
+	height: 280px;
+	font-size: 16px;
+}
+
+.questions2 {
+	grid-area: questions2; 
+	background-size: 100%;
+}
+
+.questions3 {
+	grid-area: questions3; 
+	background-size: 100%;
+}
+
+.questions4 p {
+	height: 280px;
+	font-size: 16px;
+}
+
+.participate-container {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 300px 300px 300px 300px;
+	gap: 0px 0px;
+	padding: 10%;
+	grid-template-areas:
+	"participate1"
+	"participate2"
+	"participate4" 
+	"participate3";
+  }
+
+.participate1 p {
+	height: 280px;
+	font-size: 16px;
+}
+
+.participate2 {
+	grid-area: participate2; 
+	background-size: 100%;
+}
+
+.participate3 {
+	grid-area: participate3; 
+	background-size: 100%;
+}
+
+.participate4 p {
+	height: 280px;
+	font-size: 16px;
+}
+
+
+
+
+}

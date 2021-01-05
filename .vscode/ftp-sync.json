@@ -1,0 +1,27 @@
+{
+    "remotePath": "./gmd1920/CheskoWoldendorp/",
+    "host": "ftp.geobranche.nl",
+    "username": "gmd1920@geobranche.nl",
+    "password": "Aeres2020",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ".htm, .html, .js, .css, .jpg"
+        ],
+        "path": ""
+    }
+}
